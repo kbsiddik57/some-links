@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Some Important Links from OneDrive</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-color: #fce4ec;
+      --text-color: #333;
+      --card-color: #ffffffcc;
+      --button-shadow: rgba(0, 0, 0, 0.2);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #121212;
+        --text-color: #f1f1f1;
+        --card-color: #1e1e1e;
+        --button-shadow: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    body {
+      font-family: 'Noto Sans Bengali', 'Segoe UI Emoji', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .container {
+      max-width: 400px;
+      width: 90%;
+      margin: 40px auto;
+      padding: 20px;
+      background: var(--card-color);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px var(--button-shadow);
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    h2 span {
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    h2:hover span {
+      transform: rotate(10deg) scale(1.1);
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      margin: 12px 0;
+      font-size: 17px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+      box-shadow: 2px 4px 8px var(--button-shadow);
+    }
+
+    .btn1 { background-color: #a5d6a7; color: #1b5e20; }
+    .btn2 { background-color: #90caf9; color: #0d47a1; }
+    .btn3 { background-color: #ffe082; color: #ff6f00; }
+    .btn4 { background-color: #f8bbd0; color: #880e4f; }
+    .btn5 { background-color: #d1c4e9; color: #4a148c; }
+
+    button:hover {
+      transform: scale(1.02);
+      opacity: 0.95;
+    }
+
+    .top-btn {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background-color: #555;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+      font-size: 22px;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 0 4px 8px var(--button-shadow);
+      display: none;
+    }
+
+    .top-btn:hover {
+      background-color: #222;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="top-btn" onclick="scrollToTop()">⬆️</button>
+
+  <div class="container">
+    <h2><span>🌟</span> গুরুত্বপূর্ণ কিছু লিংক <span>🌟</span></h2>
+
+    <button class="btn1" onclick="openLink('https://1drv.ms/x/c/7f53f0a13159bbc7/Ece7WTGh8FMggH-3AgAAAAABotuYcOZsstvF2ltoTlZ04Q')">📒 দৈনিক হিসাব</button>
+    <button class="btn2" onclick="openLink('https://1drv.ms/x/c/7f53f0a13159bbc7/Ece7WTGh8FMggH-ZAAAAAAABAB6Bcsk6mIQUUjbExLOVpA')">💰 লেনদেন</button>
+    <button class="btn3" onclick="openLink('https://1drv.ms/x/c/7f53f0a13159bbc7/EfKvEY5ln7tNtf9BRPFtbS0BvgKkJJyvOpycqj9Uttfw6A')">👤 ব্যক্তিগত লেনদেন</button>
+    <button class="btn4" onclick="openLink('https://1drv.ms/x/c/7f53f0a13159bbc7/Ece7WTGh8FMggH-7AgAAAAABYhP9nNKTEPaFjTkAzGDiWQ')">🎓 শিক্ষার্থীদের সাথে লেনদেন</button>
+    <button class="btn5" onclick="openLink('https://1drv.ms/o/c/7f53f0a13159bbc7/Ek1y21rRV8dKvGttP-jYWecB0pECKotNZzfGSBUk0gfkhA?e=hMChdu')">📔 কাওকাবের নোটবুক</button>
+  </div>
+
+  <script>
+    function openLink(url) {
+      window.open(url, '_blank');
+    }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.addEventListener('scroll', () => {
+      const topBtn = document.querySelector('.top-btn');
+      topBtn.style.display = window.scrollY > 100 ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>
