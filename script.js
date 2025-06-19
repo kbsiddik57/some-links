@@ -1,5 +1,5 @@
 const password = prompt("পাসওয়ার্ড দিন:");
-const correctPassword = "57"; // ইচ্ছামতো পাসওয়ার্ড বসাও
+const correctPassword = "257"; // ইচ্ছামতো পাসওয়ার্ড বসাও
 
 if (password !== correctPassword) {
   alert("ভুল পাসওয়ার্ড!");
