@@ -1,8 +1,8 @@
-const password = prompt("পাসওয়ার্ড দিন:");
-const correctPassword = "257"; // ইচ্ছামতো পাসওয়ার্ড বসাও
+const password = prompt("মোবাইল নম্বরটি ০১*******৫৭ লিখুন:");
+const correctPassword = "01722419257"; // ইচ্ছামতো পাসওয়ার্ড বসাও
 
 if (password !== correctPassword) {
-  alert("ভুল পাসওয়ার্ড!");
+  alert("প্রদত্ত নম্বরটি সঠিক নয়!");
   window.location.href = "about:blank";
 }
 
