@@ -1,21 +1,11 @@
-function openLink(url) {
-  if (url) window.open(url, '_blank');
-}
+function openLink(url) {if (url) window.open(url, '_blank');}
 
-    function switchEN() {
-      // ইংরেজি ভার্সনের পেজে রিডাইরেক্ট
-      window.location.href = 'english.html'; // পরিবর্তনযোগ্য
-    }
+function switchEN() {window.location.href = 'en.links.html';}
 
-    function switchBN() {
-      // বাংলা ভার্সনের পেজে রিডাইরেক্ট
-      window.location.href = 'bangla.html'; // পরিবর্তনযোগ্য
-    }
+function switchBN() {window.location.href = 'bn.links.html';}
 
 
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+function scrollToTop() {window.scrollTo({ top: 0, behavior: 'smooth' });}
 
 window.addEventListener('scroll', () => {
   const topBtn = document.querySelector('.top-btn');
