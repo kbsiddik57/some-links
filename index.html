@@ -3,84 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Language Selection</title>
+  <title>পাসওয়ার্ড দিন</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap" rel="stylesheet" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       font-family: 'Noto Sans Bengali', sans-serif;
-      height: 100vh;
       background: linear-gradient(to right, #fce4ec, #e3f2fd);
+      height: 100vh;
+      margin: 0;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
     }
 
-    .language-panel {
-      background-color: rgba(255, 255, 255, 0.95);
+    .pass-box {
+      background: white;
       padding: 30px 40px;
-      border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
       text-align: center;
     }
 
-    .language-panel h2 {
-      font-size: 24px;
+    .pass-box h2 {
+      font-size: 22px;
       margin-bottom: 20px;
-      color: #333;
     }
 
-    .language-btn {
-      padding: 12px 24px;
-      margin: 10px;
+    input[type="number"] {
+      padding: 10px;
       font-size: 18px;
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background: #4caf50;
+      color: white;
       border: none;
-      border-radius: 10px;
+      border-radius: 8px;
       cursor: pointer;
-      font-weight: bold;
-      transition: transform 0.2s ease;
+      transition: background 0.2s;
     }
 
-    .bn-btn {
-      background-color: #c8e6c9;
-      color: #1b5e20;
-    }
-
-    .en-btn {
-      background-color: #bbdefb;
-      color: #0d47a1;
-    }
-
-    .language-btn:hover {
-      transform: scale(1.05);
+    button:hover {
+      background: #388e3c;
     }
   </style>
 </head>
-
 <body>
 
-  <div class="language-panel" id="languagePanel">
-    <h2>ভাষা নির্বাচন করুন</h2>
-    <button class="language-btn bn-btn" onclick="selectLanguage('bangla.html')">বাংলা</button>
-    <button class="language-btn en-btn" onclick="selectLanguage('english.html')">English</button>
+  <div class="pass-box">
+    <h2>পূর্ণ ০১*******৫৭ নম্বরটি লিখুন:</h2>
+    <input type="number" inputmode="numeric" id="passwordInput" placeholder="শুধু সংখ্যা" />
+    <br />
+    <button onclick="checkPassword()">সাবমিট</button>
   </div>
 
   <script>
-    // Check for stored language
-    const storedLang = localStorage.getItem('preferredLanguage');
-    if (storedLang) {
-      window.location.href = storedLang;
-}
+    const correctPassword = "01722419257"; // ← এখানে তোমার পাসওয়ার্ড বসাও
 
-    function selectLanguage(page) {
-      localStorage.setItem('preferredLanguage', page);
-      window.location.href = page;}
+    function checkPassword() {
+      const input = document.getElementById("passwordInput").value;
+      if (input === correctPassword) {
+        window.location.href = "bn.links.html";
+      } else {
+        alert("❌ ভুল পাসওয়ার্ড!");
+        window.location.href = "about:blank";
+      }
+    }
   </script>
 
 </body>
