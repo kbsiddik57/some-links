@@ -63,7 +63,7 @@ button {
   box-shadow: 2px 4px 8px var(--button-shadow);
 }
 
-.btn01 { background-color: Neon Purple; color: #1b5e20; }
+.btn01 { background-color: #f8bbd0 ; color: #1b5e20; }
 .btn02 { background-color: #90caf9; color: #0d47a1; }
 .btn03 { background-color: #ffe082; color: #ff6f00; }
 .btn04 { background-color: #f8bbd0; color: #880e4f; }
