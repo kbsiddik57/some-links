@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>গুরুত্বপূর্ণ লিংকসমূহ</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <style>
+    /* কালপুরুষ ফন্ট লোড করুন */
+    @font-face {
+      font-family: 'Kalpurush';
+      src: url('kalpurush.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    :root {
+      --bg-color: #fce4ec;
+      --text-color: #333;
+      --card-color: #ffffffcc;
+      --button-shadow: rgba(0, 0, 0, 0.2);
+      --header-bg: linear-gradient(45deg, #4a148c, #880e4f);
+      --footer-bg: linear-gradient(45deg, #880e4f, #4a148c);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #121212;
+        --text-color: #f1f1f1;
+        --card-color: #1e1e1e;
+        --button-shadow: rgba(255, 255, 255, 0.1);
+        --header-bg: linear-gradient(45deg, #1a237e, #4a148c);
+        --footer-bg: linear-gradient(45deg, #4a148c, #1a237e);
+      }
+    }
+
+    body {
+      font-family: 'Kalpurush', 'Noto Sans Bengali', 'Segoe UI Emoji', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      width: 100%;
+      background: var(--header-bg);
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 4px 12px var(--button-shadow);
+    }
+
+    header h2 {
+      font-family: 'Kalpurush', sans-serif;
+      margin: 0;
+      font-size: 28px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .container {
+      max-width: 400px;
+      width: 90%;
+      margin: 20px auto;
+      padding: 20px;
+      background: var(--card-color);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px var(--button-shadow);
+      text-align: center;
+      font-family: 'Kalpurush', sans-serif;
+      flex: 1;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+      font-family: 'Kalpurush', sans-serif;
+    }
+
+    h2 span {
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    h2:hover span {
+      transform: rotate(10deg) scale(1.1);
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      margin: 12px 0;
+      font-size: 17px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+      box-shadow: 2px 4px 8px var(--button-shadow);
+      font-family: 'Kalpurush', sans-serif;
+    }
+
+    .btn01 { background-color: #f8bbd0 ; color: #1b5e20; }
+    .btn02 { background-color: #90caf9; color: #0d47a1; }
+    .btn03 { background-color: #ffe082; color: #ff6f00; }
+    .btn04 { background-color: #f8bbd0; color: #880e4f; }
+    .btn05 { background-color: #d1c4e9; color: #4a148c; }
+    .btn06 { background: linear-gradient(45deg, #81c784, #388e3c); color: white; }
+    .btn07 { background: linear-gradient(45deg, #4fc3f7, #0288d1); color: white; }
+    .btn08 { background: linear-gradient(45deg, #ffb74d, #f57c00); color: white; }
+    .btn09 { background: linear-gradient(45deg, #ba68c8, #6a1b9a); color: white; }
+    .btn10 { background: linear-gradient(45deg, #e57373, #d32f2f); color: white; }
+
+    button:hover {
+      transform: scale(1.02);
+      opacity: 0.95;
+    }
+
+    footer {
+      width: 100%;
+      background: var(--footer-bg);
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 20px;
+    }
+
+    .lang-switch {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      padding: 5px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: all 0.3s;
+      font-family: 'Kalpurush', sans-serif;
+      color: #333;
+      margin: 10px auto;
+      display: inline-block;
+    }
+
+    .lang-switch:hover {
+      background: #f0f0f0;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2><span>🌟</span> গুরুত্বপূর্ণ লিংকসমূহ <span>🌟</span></h2>
+  </header>
+
+  <div class="container">
+    <button class="btn01" onclick="openLink('https://1drv.ms/x/c/7f53f0a13159bbc7/Ece7WTGh8FMggH-3AgAAAAABotuYcOZsstvF2ltoTlZ04Q')">📥 মাসিক-হিসাব 📤</button>
+    <button class="btn02" onclick="openLink('https://1drv.ms/x/c/7f53f0a13159bbc7/ETyvvPSw4TBEko0OOcQ-iFkB2uelyoKySgMS0yM9__A9Bw')">🏦 ইসলামী ব্যাংক 🏦</button>
+    <button class="btn03" onclick="openLink('https://1drv.ms/x/c/7f53f0a13159bbc7/EWJMoh4_-4BJrSfIL-OeobsBmr8N1Nc6DlwfqgKgg8ChXA')">🏦 ডাচ্ বাংলা ব্যাংক 🏦</button>
+    <button class="btn04" onclick="openLink('https://1drv.ms/x/c/7f53f0a13159bbc7/EWZ0eMZghc5Lg7ZfzgCKu7EBWBx4a_NuwOP5sU7GBCpmUg')">🏍️ সালমান এন্টারপ্রাইজ 🏍️</button>
+    <button class="btn05" onclick="openLink('https://1drv.ms/x/c/7f53f0a13159bbc7/EWJykDTMmyZGjWAUHEJ2zXkBl3IE_-6yetK3bw1wlj04PA')">🌾 ধানের হিসাব 🌾</button>
+    <button class="btn06" onclick="openLink('https://1drv.ms/x/c/7f53f0a13159bbc7/EV3Y0QQugsZMibEs_zciGDABrxN_YjgYq3wiJ8l37VHGGQ')">🌅 নজিপুর মাদ্রাসা 🌅</button>
+    <button class="btn07" onclick="openLink('https://1drv.ms/x/c/7f53f0a13159bbc7/EfKvEY5ln7tNtf9BRPFtbS0BvgKkJJyvOpycqj9Uttfw6A')">💱 দেনা-পাওনার হিসাব 💱</button>
+    <button class="btn08" onclick="openLink('https://1drv.ms/x/c/7f53f0a13159bbc7/Ece7WTGh8FMggH-7AgAAAAABYhP9nNKTEPaFjTkAzGDiWQ')">🎓 ছাত্রদের জমা 🎓</button>
+    <button class="btn09" onclick="openLink('https://1drv.ms/o/c/7f53f0a13159bbc7/Ek1y21rRV8dKvGttP-jYWecB0pECKotNZzfGSBUk0gfkhA?e=hMChdu')">📔 কাওকাবের নোটবুক 📔</button>
+    <button class="btn10" onclick="openLink('https://1drv.ms/x/c/7f53f0a13159bbc7/EbrvNdfwbYdMkz12KbOG7boBZM2-Mpu4g_usrXWK5ZpP4g?e=m55rl9')">📖 কুরআন খতমের হিসাব 📖</button>
+  </div>
+
+  <footer>
+    <!--  <button class="lang-switch" title="ইংরেজি সংস্করণ" onclick="switchEN()">🇺🇲 English Version</button> -->
+    <p>Email: kaokabsiddiki@gmail.com</p>
+  </footer>
+
+  <script>
+    function openLink(url) {
+      if (url) window.open(url, '_blank');
+    }
+
+    function switchEN() {
+      window.location.href = 'en/links.html';
+    }
+  </script>
+</body>
+</html>
